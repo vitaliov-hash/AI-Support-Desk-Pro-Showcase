@@ -1,6 +1,6 @@
 # AI Support Desk — Hybrid RAG Support Assistant
 
-**Release status:** Showcase copy is prepared. Repository publication and live deployment are pending the privacy and security gates below.  
+**Release status:** This repository contains the Showcase package that passed local privacy review. The Live Demo is not deployed; production security gates remain open.
 **Sample content:** fictional FlowDesk CRM documentation only.
 
 ## Product
@@ -20,7 +20,7 @@ AI Support Desk is a local-first support assistant that answers questions from a
 
 The final isolated desktop browser run passed 10/10 answer scenarios and 10/10 strict source-section and citation checks. It covered role questions, paraphrased CSV export, exact and mixed error codes, plan and permission conditions, English-to-Russian retrieval, and an unknown recovery-time question. P02 and P08 passed after their retrieval and grounding corrections. Backend regression checks passed 21/21. The login UI scenario, local-provider prompt-injection retest, and 390px mobile viewport also passed (4/4 Playwright tests total).
 
-The run used the local CodexTestProvider. DeepSeek live generation, production credentials, public deployment, and production readiness have not been verified. A separate retrieval-only evaluation passed 10/10 cases and 20/20 language variants; it measures retrieval, not generated-answer quality. Prompt-injection testing is supplemental and its full retest remains open.
+The run used the local CodexTestProvider. DeepSeek live generation, production credentials, public deployment, and production readiness have not been verified. A separate retrieval-only evaluation passed 10/10 cases and 20/20 language variants; it measures retrieval, not generated-answer quality. The local prompt-injection retest passed against CodexTestProvider; it does not verify DeepSeek or production behavior.
 
 ## Evidence screenshots
 
@@ -64,18 +64,18 @@ The local prototype is not ready for direct internet exposure. A public demo req
 
 ## Privacy and release checklist
 
-- [ ] Review every file and screenshot included in the Showcase package.
-- [ ] Confirm public package contains no secrets, private prompts, local paths, user/session data, or runtime data.
-- [ ] Verify each public claim against the final evidence and label the local test provider accurately.
-- [ ] Review the private source repository's exact initial commit file list and secret scan.
+- [x] Review every file and screenshot included in the Showcase package.
+- [x] Confirm public package contains no secrets, private prompts, local paths, user/session data, or runtime data.
+- [x] Verify each public claim against the final evidence and label the local test provider accurately.
+- [x] Review the private source repository's exact initial commit file list and secret scan.
 - [ ] Complete the deployment security checklist before opening a Live Demo.
-- [ ] Obtain release approval before publishing or deploying.
+- [ ] Obtain separate owner approval before deploying a Live Demo.
 
 ---
 
 # AI Support Desk — помощник поддержки на Hybrid RAG
 
-**Статус выпуска:** текст Showcase подготовлен. Публикация репозитория и Live Demo ожидают прохождения проверок конфиденциальности и безопасности.  
+**Статус выпуска:** этот репозиторий содержит пакет Showcase, прошедший локальную проверку конфиденциальности. Live Demo не развёрнута; требования безопасности production-среды остаются открытыми.
 **Данные примера:** только вымышленная документация FlowDesk CRM.
 
 ## Продукт
